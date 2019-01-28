@@ -1,0 +1,37 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Malware</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    
+  </head>
+
+<body>
+<u>Current Data</u>
+<ul class="define">
+    <% for(var i=0; i<define.length; i++) {%>
+      <li class="quote">
+        <b><span><%= define[i].name %></span></b>
+        <span><%= define[i].define %></span>
+      </li>
+    <% } %>
+  </ul>
+
+  Update known threats and their definitions here.
+  <form action="/data" method="POST">
+      <input class="u-full-width" type="text" placeholder="Name" name="name">
+      <textarea class="u-full-width" type="text" placeholder="Definition" name="define"></textarea>
+      <button class="button-info" type="submit">Submit</button>
+  </form>
+
+    <div>
+        <h5>Replace last definition</h5>
+        <button id="update"> Replace </button>
+    </div>
+
+      <div>
+        <h5>Delete first entry</h5>
+        <button id="delete"> Delete </button>
+      </div>
+
+      <script src="main.js"></script>
+</body>
