@@ -1,4 +1,4 @@
-### MongoDB data ops. with ejs view engine
+# MongoDB data operations with ejs view engine
 
 ![alt text](https://imgur.com/download/lcMzStZ)
 
